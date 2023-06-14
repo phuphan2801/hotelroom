@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <title>Crowny Hotel</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li>
+                        <a href="#home">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a href="#about">Giới Thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#rooms">Phòng</a>
+                    </li>
+                    <li>
+                        <a href="#pages">Dịch Vụ</a>
+                    </li>
+                    <li>
+                        <a href="#news">Tin Tức</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Liên Hệ</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-search"></i>
+                    </li>
+                    <li>
+                        <a href="dangky.html" target="_blank">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a href="dangnhap.html" target="_blank">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <button class="primary-btn">Đặt Ngay</button>
+                    </li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+
+        </div>
+    </header>
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "100vh";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./images/banner-1.png" alt="" height="400px" width="100%">
+                    <div class="text">
+                        <h1>Vi vu theo cách của bạn</h1>
+                        <p>Tiết kiệm ít nhất 15% cho lưu trú toàn cầu, từ nghỉ dưỡng đến phiêu lưu hoang dã</p>
+                        <div class="flex">
+                            <button class="primary-btn">Đọc Thêm</button>
+                            <button class="secondary-btn">Liên Hệ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/banner-2.png" alt="" height="400px" width="100%">
+                    <div class="text">
+                        <h1>Tận hưởng kỳ nghỉ dài nhất của bạn</h1>
+                        <p>Tìm kiếm các chỗ nghỉ cho phép lưu trú dài ngày với giá theo tháng ưu đãi</p>
+                        <div class="flex">
+                            <button class="primary-btn">Đọc Thêm</button>
+                            <button class="secondary-btn">Liên Hệ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/banner-3.png" alt="" height="400px" width="100%">
+                    <div class="text">
+                        <h1>Lưu trú tại chỗ nghỉ độc đáo hàng đầu</h1>
+                        <p>Từ biệt thự, lâu đài cho đến nhà thuyền, igloo, chúng tôi đều có hết</p>
+                        <div class="flex">
+                            <button class="primary-btn">Đọc Thêm</button>
+                            <button class="secondary-btn">Liên Hệ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+
+    <section class="book">
+        <div class="container flex_space">
+            <div class="text">
+                <h1><span>Đặt </span> Phòng Ngay </h1>
+            </div>
+            <div class="form">
+                <form class="grid"></form>
+                <input type="date" placeholder="Araival Date">
+                <input type="date" placeholder="Departure Date">
+                <input type="number" placeholder="Người lớn">
+                <input type="number" placeholder="Trẻ em">
+                <input type="submit" value="Kiểm tra">
+            </div>
+        </div>
+    </section>
+    <section class="about top">
+        <div class="container flex">
+            <div class="heading">
+                <h2>Crowny Hotel</h2>
+                <p>Khách sạn Crowny Đà Nẵng tọa lạc tại 500 Võ Nguyên Giáp, Phường Mỹ An, Quận Ngũ Hành Sơn. Đây sẽ
+                    là địa điểm lưu trú thuận lợi giúp du khách dễ dàng di chuyển trong những địa điểm tham quan nổi
+                    tiếng của thành phố. Du khách chỉ cần đi bộ vài bước chân là có thể đến bãi biển Mỹ Khê. Khoảng cách
+                    đến sân bay Đà Nẵng khoảng 5,5 km, ga Đà Nẵng 5 km. Được xây dựng theo tiêu chuẩn 5 sao, khách sạn
+                    Crowny Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp, sẽ mang đến cho du khách một không gian sang
+                    trọng, quý phái khi đển thăm thành phố Đà Nẵng.</p>
+                <button class="primary-btn">Giới Thiệu</button>
+            </div>
+            <div class="right">
+                <img src="./images/about.png" alt="" width="500px">
+            </div>
+        </div>
+    </section>
+
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h1>2500</h1>
+                <hr>
+                <span>Khách Hàng</span>
+            </div>
+            <div class="box">
+                <h1>1250</h1>
+                <hr>
+                <span>Đánh Giá</span>
+            </div>
+            <div class="box">
+                <h1>150</h1>
+                <hr>
+                <span>Nhân Viên</span>
+            </div>
+            <div class="box">
+                <h1>50</h1>
+                <hr>
+                <span>Phòng</span>
+            </div>
+        </div>
+    </section>
+    <section class="rooms">
+        <div class="container top">
+            <div class="heading">
+
+                <h2>Các Hạng Phòng</h2>
+                <p>Tận hưởng dịch vụ đỉnh cao, đẳng cấp thế giới tại Crowny Hotel</p>
+            </div>
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="./images/room-1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Superior Twin</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Phòng dành cho 2 người. Được thiết kế sang trọng và hoàn hảo với các tiện nghi hiện đại,
+                                đáp ứng mọi kỳ nghỉ thư thái của bạn trong một căn phòng khá thoải mái.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">Đặt Ngay</button>
+                                <h3>1.440.000 <span> <br> Mỗi Đêm </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="./images/room-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Deluxe Twin</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Được thiết kế sang trọng và hoàn hảo với các tiện nghi hiện đại, đáp ứng mọi kỳ nghỉ thư
+                                thái của bạn trong một căn phòng khá đẹp với cửa sổ lớn nhìn ra thành phố.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">Đặt Ngay</button>
+                                <h3>1.843.200 <span> <br> Mỗi Đêm </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="./images/room-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Deluxe Twin hướng biển</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Phòng Deluxe hướng nhìn ra biển, có hai giường nhỏ. Phòng tắm có áo choàng tắm sang
+                                trọng, dép, máy sấy tóc và đồ vệ sinh cá nhân sang trọng.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">Đặt Ngay</button>
+                                <h3>2.016.000 <span> <br> Mỗi Đêm </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="./images/room-4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Deluxe King</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Được thiết kế sang trọng và hoàn hảo với các tiện nghi hiện đại, đáp ứng mọi kỳ nghỉ thư
+                                thái của bạn trong một căn phòng khá đẹp với cửa sổ lớn nhìn ra thành phố.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">Đặt Ngay</button>
+                                <h3>1.843.200 <span> <br> Mỗi Đêm </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="./images/room-5.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Deluxe King hướng biển</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Phòng Deluxe hướng nhìn ra biển, có một giường lớn. Phòng tắm có áo choàng tắm sang
+                                trọng, dép, máy sấy tóc và đồ vệ sinh cá nhân sang trọng</p>
+                            <div class="button flex">
+                                <button class="primary-btn">Đặt Ngay</button>
+                                <h3>2.016.000 <span> <br> Mỗi Đêm </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="./images/room-6.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>President Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Giường thoải mái, dựa trên 20 đánh giá.Căn hộ này có ban công, lò vi sóng và máy sấy quần
+                                áo.Bao gồm dịch vụ đưa đón sân bay theo lịch trình miễn phí.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">Đặt Ngay</button>
+                                <h3>1.200.000 <span> <br> Mỗi Đêm </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="./images/room-7.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suite Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Giường thoải mái, dựa trên 20 đánh giá.Suite này có ban công, máy sấy quần áo và khu vực
+                                ghế ngồi.Bao gồm dịch vụ đưa đón sân bay theo lịch trình miễn phí.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">Đặt Ngay</button>
+                                <h3>1.800.000 <span> <br> Mỗi Đêm </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="./images/room-8.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Executive Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Giường thoải mái, dựa trên 20 đánh giá.Phòng Giường Đôi này có ban công, minibar và cách
+                                âm.Bao gồm dịch vụ đưa đón sân bay theo lịch trình miễn phí.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">Đặt Ngay</button>
+                                <h3>1.500.000 <span> <br> Mỗi Đêm </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script>
+        $('.owl-carousel1').owlCarousel({
+            loop: true,
+            margin: 40,
+            nav: true,
+            dots: false,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2,
+                    margin: 10,
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <section class="gallery">
+        <div class="container top">
+            <div class="heading">
+
+                <h2>Hình Ảnh Khách Sạn</h2>
+                <p>Cùng khám phá bộ hình ảnh đầy cảm hứng của Khách sạn Crowny Đà Nẵng.</p>
+            </div>
+        </div>
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-1.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Tiêu Đề Ảnh</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-2.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Tiêu Đề Ảnh</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-3.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Tiêu Đề Ảnh</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-4.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Tiêu Đề Ảnh</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-5.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Tiêu Đề Ảnh</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-6.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Tiêu Đề Ảnh</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-4.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Tiêu Đề Ảnh</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel1').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 4,
+
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+
+    <!-- ----------------- -->
+    <section class="services top">
+        <div class="container">
+            <div class="heading">
+
+                <h2>Các Dịch Vụ Và Tiện Nghi</h2>
+                <p>Để phục vụ mọi nhu cầu du lịch, nghỉ dưỡng của khách hàng, khách sạn Crowny trang bị đầy đủ các
+                    tiện ích, dịch vụ...
+            </div>
+
+
+            <div class="content flex_space">
+                <div class="left grid2">
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                            <h3>Món Ngon</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <h3>Thể Thao</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-utensils"></i>
+                            <h3>Nhà Hàng</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-spa"></i>
+                            <h3>Làm Đẹp</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/service.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services top">
+        <div class="container">
+            <div class="heading">
+                <h2>Đánh Giá Gần Đây</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="Customer top">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Dich vu tiện ích . Nhân viên rất nhiệt tình . Phòng view hướng vịnh nhìn ra thành phố rất
+                        đẹp và thoáng . Nói chung là rất tuyệt, đáng để trải nghiệm, cám ơn nhân viên rất nhiệt
+                        tình hướng dẫn và không quên lời cám ơn tới nv Tran Toan mình sẽ quay lại nhiều lần</p>
+                    <h3>Daniel T</h3>
+                    <label>Daniel T</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Bọn mình đi 3 ngày 3 đêm, thuê phòng ở phía mặt biển, khá là chill nha. phòng rộng thoáng, sạch sẽ. check in nhanh. bể bơi vô cực siêuu đẹpp nha mn. nên thử 1 lần nhé, có xe đưa đón ra sân bay miễn phí. đồ ăn cũng nhiều và ngon. lần sau sẽ ghé tiếppp 
+                        cảm ơn các bạn nhân viên đã phục vụ nhiệt tình
+                        cuối cùnh cho mình gửi lời hỏi thăm tới nhân viên Trần Toàn cũng đã hỗ trợ rất nhiệt tình</p>
+                    <h3>Lam V</h3>
+                    <label>Lam V</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Hotel view đẹp. Nhân viên vui vẻ, hồ bơi view xịn. Đồ ăn ngon!
+                        Phòng sạch sang!
+                        Lễ tân nhà hàng vui vẻ . Và các bạn cskh đều nhiệt tình cảm nhận sau khi lưu chú thật ko gì tả nổi chắc chắn lần sau quay lại nhiều lần . Tạm biệt chị sara tran toan rất nhiệt tình hy vọng gặp lại</p>
+                    <h3>Uyên U</h3>
+                    <label>Uyên U</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel2').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1,
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+
+
+    <section class="news top rooms">
+        <div class="container">
+            <div class="heading">
+                <h2>Tin Tức Và Trải Nghiệm</h2>
+
+            </div>
+
+
+            <div class="content flex">
+                <div class="left grid2">
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/blog-1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Top 5 Quán Bar tại Đà Nẵng.</h2>
+                            <div class="admin flex">
+                                <i class="fa fa-user"></i>
+                                <label>Admin</label>
+                                <i class="fa fa-heart"></i>
+                                <label>500</label>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                            <p>Bạn có thể tìm đến những không gian có ánh đèn lung linh, kỳ ảo, âm nhạc hay để
+                                giải phóng tâm trạng sau một tuần làm việc.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/blog-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Nhận ưu đãi đặt phòng.</h2>
+                            <div class="admin flex">
+                                <i class="fa fa-user"></i>
+                                <label>Admin</label>
+                                <i class="fa fa-heart"></i>
+                                <label>500</label>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                            <p>Từ ngày 13/04 - 16/04/2023, Crowny Hotel sẽ triển khai chương trình "Summer
+                                Chill" tiết kiệm tới 60% trong khuôn khổ.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/blog-s1.png" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>Osaka Villa Hội An</h2>
+                            <p>Tại đây, du khách có thể dễ dàng di chuyển qua lại giữa khách sạn và phố cổ Hội
+                                An.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/blog-s2.png" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>Biển T20 Đà Nẵng</h2>
+                            <p>Nếu xét riêng về độ dài của bãi biển T20 thì chưa chạm đến 900m.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/blog-s3.png" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>Sơn Trà Resort</h2>
+                            <p>Nằm trên Bán đảo Sơn Trà (Núi Khỉ), dọc theo Vịnh Đà Nẵng và bãi biển riêng.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="newsletter mtop">
+        <div class="container flex_space">
+            <h1>NHẬN THÔNG TIN ƯU ĐÃI</h1>
+            <input type="text" placeholder="Email nhận bản tin khuyến mãi">
+            <input type="text" value="Đăng ký">
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="images/logo-2.png" alt="">
+                <p>Khách sạn Crowny Đà Nẵng tọa lạc tại 500 Võ Nguyên Giáp, Phường Mỹ An, Quận Ngũ Hành
+                    Sơn. Đây sẽ là địa điểm lưu trú thuận lợi giúp du khách dễ dàng di chuyển trong những địa
+                    điểm tham quan nổi tiếng của thành phố. Du khách chỉ cần đi bộ vài bước chân là có thể đến
+                    bãi biển Mỹ Khê. Khoảng cách đến sân bay Đà Nẵng khoảng 5,5 km, ga Đà Nẵng 5 km. Được xây
+                    dựng theo tiêu chuẩn 5 sao, khách sạn Crowny Đà Nẵng nằm bên bờ biển Mỹ Khê xinh đẹp,
+                    sẽ mang đến cho du khách một không gian sang trọng, quý phái khi đển thăm thành phố Đà Nẵng.
+                </p>
+
+                <div class="icon">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Điều Khoản & Quy Định</h2>
+                <ul>
+                    <li>Điều khoản chung</li>
+                    <li>Quy định chung</li>
+                    <li>Quy định về thanh toán</li>
+                    <li>Chính sách quyền riêng tư</li>
+                    <li>Chính sách giải quyết tranh chấp</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Liên Hệ</h2>
+                
+                </p>
+                <i class="fa fa-location-dot"></i>
+                <label>254 Nguyễn Văn Linh, Quận Thanh Khê - Tp. Đà Nẵng</label> <br>
+                <i class="fa fa-phone"></i>
+                <label>[+84] 702 377 869</label> <br>
+                <i class="fa fa-envelope"></i>
+                <label>phuphan28012001@gmail.com.vn</label> <br>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Bản quyền © 2023 Crowny Hotel. Bảo lưu mọi quyền.</p>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
